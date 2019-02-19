@@ -1,28 +1,13 @@
 <html>
-<link rel="stylesheet" type="text/css" href="./main.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 <head>
 <title>index.html</title>
 <meta name="viewport"content="width=device-width, initial-sal=1">
-<script>
-function clickCounter() {
-  if(typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    var st = localStorage.clickcount;
-    var temp = st.fontsize(5);
-    var str = " :likes till now"
-    // var str2 = output.fontcolor(red);
-    document.getElementById("result").innerHTML = temp + str.fontsize(5);
-  }
-}
-</script>
+<script src="../js/script.js"></script>
 
 </head>
 
-<body background="contactwall.jpg">
+<body background="../images/contactwall.jpg">
   <br>
   <br>
   <br>
@@ -58,10 +43,10 @@ function clickCounter() {
 <br>
 <center>
     <a href="gameopedia.html">
-      <img src="gameopedia.jpg" width="400px" height="400px">
+      <img src="../images/gameopedia.jpg" width="400px" height="400px">
     </a>
     <a href="marvel.html">
-      <img src="marvel2.jpg" width="400px" height="400x">
+      <img src="../images/marvel2.jpg" width="400px" height="400x">
     </a>
 </center>
 </body>

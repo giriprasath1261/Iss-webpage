@@ -2,23 +2,23 @@ var image_tracker = '1';
 function change(){
   var image = document.getElementById('circle');
   if(image_tracker=='1'){
-    image.src='1.jpeg';
+    image.src='../images/1.jpeg';
     image_tracker='2';
   }
   else if (image_tracker=='2') {
-    image.src='2.jpg';
+    image.src='../images/2.jpg';
     image_tracker='3';
   }
   else if (image_tracker=='3') {
-    image.src='3.png';
+    image.src='../images/3.png';
     image_tracker='4';
   }
   else if (image_tracker=='4') {
-    image.src='4.jpg';
+    image.src='../images/4.jpg';
     image_tracker='5';
   }
   else {
-    image.src='5.jpg'
+    image.src='../images/5.jpg'
     image_tracker='1';
   }
 }
