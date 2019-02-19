@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" type="text/css" href="./main.css">
+<head>
+<title>index.html</title>
+<meta name="viewport"content="width=device-width, initial-sal=1">
+<script>
+function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    var st = localStorage.clickcount;
+    var temp = st.fontsize(5);
+    var str = " :likes till now"
+    // var str2 = output.fontcolor(red);
+    document.getElementById("result").innerHTML = temp + str.fontsize(5);
+  }
+}
+</script>
+
+</head>
+
+<body background="contactwall.jpg">
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- <p style="float: left"><img src="like1.png" width="200px" height="100px" onclick="clickCounter()"></p> -->
+
+  <p class="like"><button onclick="clickCounter()" type="button">LIKE</button></p>
+  <div id="result"></div>
+  <heading><center>Giri Prasath's Page</center></heading>
+
+</body>
+</head>
+<body>
+  <div class="navbar">
+    <a href="main.html">Home</a>
+    <a href="gameopedia.html">Gameopedia</a>
+    <a href="marvel.html">Marvel Marathon</a>
+    <a href="about.html">About Me</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+    <h3><type2>click on any of the link below to begin</type2></h3>
+</center>
+<br>
+<center>
+    <a href="gameopedia.html">
+      <img src="gameopedia.jpg" width="400px" height="400px">
+    </a>
+    <a href="marvel.html">
+      <img src="marvel2.jpg" width="400px" height="400x">
+    </a>
+</center>
+</body>
