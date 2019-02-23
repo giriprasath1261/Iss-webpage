@@ -20,7 +20,6 @@ body {margin:0;}
 .navbar {
   overflow: hidden;
   background-color: grey;
-  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -40,38 +39,26 @@ body {margin:0;}
   color: white;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: 1500px;
 }
 
-/* ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 10;
-  width: 980px;
-  background="wall.jpg";
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  padding: 16px 32px;
-  text-decoration: none;
-  text-shadow: 2px 2px brown;
-}
-
-li a:hover {
-  background-color: black;
-  color: red;
-} */
 
 type1 {
   color: white;
@@ -128,7 +115,6 @@ th {
   font-weight: bold;
 }
 td {
-  /* background-color:white; */
   padding: 8px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -145,7 +131,6 @@ tr:hover {
 .like button{
   height: 5%;
   width: 10%;
-  /* background-color: white; */
   font-size: 30px;
   color: white;
 }

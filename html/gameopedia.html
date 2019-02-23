@@ -4,7 +4,6 @@
 <title>Gameopedia</title>
 <meta name="viewport"content="width=device-width, initial-sal=1">
 <body background="../images/contactwall.jpg">
-<br>
 </body>
 </head>
 
@@ -16,8 +15,6 @@
     <a href="about.html">About Me</a>
     <a href="contact.html">Contact</a>
   </div>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -115,5 +112,21 @@
 <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/18/45/1541435128-anthem-the-game.jpg?crop=1.00xw:0.902xh;0,0.0548xh&resize=640:*" height="300px" width="400px" >
 <img src="https://s3.dexerto.com/thumbnails/_thumbnailLarge/when-does-tom-clancys-the-division-2-release-trailer-release-date-beta-information.jpg" height="300px" width="400px">
 </center>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navigation");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>

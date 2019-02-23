@@ -4,7 +4,6 @@
 <title>Marvel</title>
 <meta name="viewport"content="width=device-width, initial-sal=1">
 <body background="../images/contactwall.jpg">
-<br>
 </body>
 </head>
 
@@ -56,4 +55,21 @@
   <br>
 <img src="../images/1.jpeg" alt="Circle" id="circle" height="500px" width="800px" onclick="change();" style="float: right;">
 </p>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navigation");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
+</html>

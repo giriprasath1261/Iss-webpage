@@ -8,16 +8,14 @@
 </head>
 
 <body background="../images/contactwall.jpg">
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <!-- <p style="float: left"><img src="like1.png" width="200px" height="100px" onclick="clickCounter()"></p> -->
 
   <p class="like"><button onclick="clickCounter()" type="button">LIKE</button></p>
   <div id="result"></div>
   <heading><center>Giri Prasath's Page</center></heading>
+  <br>
+  <br>
+  <br>
+
 
 </body>
 </head>
@@ -30,11 +28,6 @@
     <a href="contact.html">Contact</a>
   </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 
 <center>
@@ -49,4 +42,21 @@
       <img src="../images/marvel2.jpg" width="400px" height="400x">
     </a>
 </center>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navigation");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
+</html>

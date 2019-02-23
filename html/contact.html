@@ -35,5 +35,21 @@
   <img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="100px" height="100px">
 </a>
 </center>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navigation");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
