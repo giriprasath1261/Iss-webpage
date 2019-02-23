@@ -38,6 +38,13 @@ function clickCounter() {
   }
 }
 
+var data={};
+var count=0;
 function getData() {
-  
+  var name=document.getElementById("NAME").value;
+  var skill=document.getElementById("SKILL").value;
+  var level=document.getElementById("LEVEL").value;
+  data[count]=[name,skill,level];
+  a1(count);
+  count++;
 }

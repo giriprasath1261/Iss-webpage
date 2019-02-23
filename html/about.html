@@ -5,7 +5,6 @@
 <body background="../images/contactwall.jpg"></body>
 <script src="../js/script.js"></script>
 <meta name="viewport"content="width=device-width, initial-sal=1">
-</head>
 <body>
 <div class="navbar">
   <a href="main.html">Home</a>
@@ -13,10 +12,14 @@
   <a href="marvel.html">Marvel Marathon</a>
   <a href="about.html">About Me</a>
   <a href="contact.html">Contact</a>
+</head>
 </div>
 <br>
 <br>
 <br>
+<br>
+<br>
+<center><heading>ABOUT ME</heading></center>
 <br>
 <br>
 <p><type1>Hello everyone i am Giri Prasath of UG2k18</type1></p>
@@ -27,20 +30,43 @@
 <br>
 <div>
 <center>
+  <type6>
   <form class="FORM">
     NAME:
-    <input type="text" id="NAME" name="NAME" placeholder="Enter your name" width="300px" height="30px" value=""></input>
+    <input type="text" id="NAME" name="NAME" placeholder="Enter name" width="400px" height="30px"></input>
     SKILL:
-    <input type="text" id="NAME" name="SKILL" placeholder="Enter the skill" value="" width="300px" height="30px"></input>
+    <input type="text" id="SKILL" name="SKILL" placeholder="Enter skill" width="400px" height="30px"></input>
     LEVEL:
     <select id="LEVEL" name="LEVEL" width="300px" height="30px">
       <option value="Proficient">Proficient</option>
       <option value="Intermediate">Intermediate</option>
       <option value="Beginner">Beginner</option>
     </select>
-    <input type="button" height="20px" width="100px" onclick="getData()" value="Submit"></input>
+    <input type="button" height="30px" width="100px" onclick="getData()" value="Submit"></input>
   </form>
+</type6>
 </center>
 </div>
+
+<p id="print"></p>
+
+<center>
+<table style="width:50%">
+  <tr>
+    <th>Name</th>
+    <th>Skill</th>
+    <th>Level</th>
+  </tr>
+</table>
+</center>
+
+<script>
+function a1(c)
+{
+  var tab=document.getElementsByTagName("table")[0];
+  tab.innerHTML+="<tr><td>"+data[c][0]+"</td><td>"+data[c][1]+"</td><td>"+data[c][2]+"</td>";
+}
+</script>
+
 </body>
 </html>
