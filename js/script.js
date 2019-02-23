@@ -37,3 +37,7 @@ function clickCounter() {
     document.getElementById("result").innerHTML = temp + str.fontsize(5);
   }
 }
+
+function getData() {
+  
+}

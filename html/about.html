@@ -3,6 +3,8 @@
 <head>
 <title>about</title>
 <body background="../images/contactwall.jpg"></body>
+<script src="../js/script.js"></script>
+<meta name="viewport"content="width=device-width, initial-sal=1">
 </head>
 <body>
 <div class="navbar">
@@ -21,16 +23,24 @@
 <br>
 <br>
 <p><type6>Help me to know more about myself</type6></p>
-<form action="/action_page.php">
-  <select name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-  <br><br>
-  <input type="submit">
 <br>
 <br>
+<div>
+<center>
+  <form class="FORM">
+    NAME:
+    <input type="text" id="NAME" name="NAME" placeholder="Enter your name" width="300px" height="30px" value=""></input>
+    SKILL:
+    <input type="text" id="NAME" name="SKILL" placeholder="Enter the skill" value="" width="300px" height="30px"></input>
+    LEVEL:
+    <select id="LEVEL" name="LEVEL" width="300px" height="30px">
+      <option value="Proficient">Proficient</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Beginner">Beginner</option>
+    </select>
+    <input type="button" height="20px" width="100px" onclick="getData()" value="Submit"></input>
+  </form>
+</center>
+</div>
 </body>
 </html>
